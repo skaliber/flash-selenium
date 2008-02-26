@@ -1,0 +1,18 @@
+=Selenium RC / Flash Integration=
+
+Selenium RC uses JavaScript to communicate with the browser. And Flash ExternalInterface provides a mechanism for which you can use JavaScript to call an ActionScript function in the Flash Player. Therefore we can use JavaScript as the conduit between Selenium RC and the Flash application.
+
+The figure below shows the usage of JavaScript for connecting Selenium RC and the Flash application.
+
+http://www.caroli.org/flash/SRClientServerCommunication.jpg
+
+
+With Flash ExternalInterface you can expose specific Flash object functions .
+<<code>>
+
+The SeleniumFlash is the component adding Flash communication capabilities to the Selenium framework. Basically,  the SeleniumFlash is a Selenium RC Client driver extension for helping exercise the tests against the Flash component. The SeleniumFlash constructor takes a Selenium instance and a flash object id as parameters. An instance of SeleniumFlash is used to invoke the functions on the Flash component. 
+
+You can invoke functions which were externalized by the ExternalInterface, as well as the default functions of any flash object (e.g, PercentLoaded(), IsPlaying(), etc). 
+
+The SeleniumFlash is currently available for Java. Analogous components will be created for the other Selenium RC client drivers--.Net, ruby, Phyton and PHP. For more information on SeleniumFlash, please refer to [ref].
+ 
