@@ -2,7 +2,7 @@
 
 Selenium RC uses !JavaScript to communicate with the browser. And Flash !ExternalInterface provides a mechanism for which you can use !JavaScript to call an !ActionScript function in the Flash Player. Therefore we can use JavaScript as the conduit between Selenium RC and the Flash application.
 
-The [http://www.caroli.org/flash/SRClientServerCommunication.jpg figure] shows the usage of JavaScript for connecting Selenium RC and the Flash application.
+The [http://www.caroli.org/flash/SRClientServerCommunication.jpg figure] shows the usage of !JavaScript for connecting Selenium RC and the Flash application.
 
 
 With Flash !ExternalInterface you can expose specific Flash object functions.
